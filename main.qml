@@ -1,6 +1,9 @@
 import QtQuick 2.14
 import QtQuick.Window 2.14
 import QtQuick.Controls 2.13
+import QtQuick.Layouts 1.3
+import QtQuick.Controls.Universal 2.0
+import QtQuick.Controls.impl 2.3
 
 
 
@@ -40,7 +43,7 @@ Window {
             y: 385
             width: 90
             height: 36
-            text: qsTr("Sigint")
+            text: qsTr("Sign in")
 
             background: Rectangle {
                 //color: "chartreuse"
@@ -95,22 +98,30 @@ Window {
             font.family: "Ubuntu"
         }
 
-        TextField {
-            id: textField
-            x: 340
-            y: 278
-            width: 177
-            height: 35
-            placeholderText: qsTr("nombre de usuario")
+        TextInput {
+            id: textInput
+            x: 345
+            y: 279
+            width: 136
+            height: 28
+            text: qsTr("Text Input")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+
+
         }
 
-        TextField {
-            id: textField1
-            x: 340
-            y: 323
-            width: 177
-            height: 35
-            placeholderText: qsTr("Contraseña")
+        TextInput {
+            id: textInput1
+            x: 345
+            y: 327
+            width: 136
+            height: 28
+            text: qsTr("Text Input")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            passwordCharacter: ""
+            inputMask: "sdsdsd"
         }
 
 
