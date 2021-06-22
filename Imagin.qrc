@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/inicio">
+        <file>barcos.png</file>
+    </qresource>
+</RCC>
